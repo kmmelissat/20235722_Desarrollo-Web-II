@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Modal de Producto</title>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Taylor Swift - Website</title>
+    <style>
+      .Stream_spotifyEmbed__S7ivh {
+    width: 100%;
+    height: 30em;  
+    }
+    body {
+        font-family: 'Work Sans', sans-serif;
+    }
+    </style>
+    
 
 </head>
 
-<body class="bg-gray-100">
-    <!-- Navbar -->
-  <nav class="bg-pink-300 shadow-md py-4">
+<body class="bg-gray-100 ">
+    <!-- nav -->
+  <nav class="bg-pink-300 shadow-md py-4 static" >
     <div class="container mx-auto flex justify-between items-center ">
       <img src="../images/logotaylor.png" alt="Logo" class="h-10">
 
@@ -19,7 +31,6 @@
         <a href="#" class="text-black font-medium transition transform hover:text-white hover:bg-pink-500 hover:scale-110 rounded-2xl px-2 py-1">Stream</a>
         <a href="#" class="text-black font-medium transition transform hover:text-white hover:bg-pink-500 hover:scale-110 rounded-2xl px-2 py-1">Shop</a>
         <a href="#" class="text-black font-medium transition transform hover:text-white hover:bg-pink-500 hover:scale-110 rounded-2xl px-2 py-1">Video</a>
-        <a href="#" class="text-black font-medium transition transform hover:text-white hover:bg-pink-500 hover:scale-110 rounded-2xl px-2 py-1">Gallery</a>
         <a href="#" class="text-black font-medium transition transform hover:text-white hover:bg-pink-500 hover:scale-110 rounded-2xl px-2 py-1">Highlights</a>
       </div>
       
@@ -29,7 +40,7 @@
   <header class="w-full bg-white shadow-lg">
     <div class="w-full m-0">
         <div class="flex flex-wrap justify-center">
-            <!-- Images -->
+            <!-- imagenes del header -->
             <img src="../images/debut.jpg" class="w-1/3 md:w-1/4 lg:w-1/6 transition-transform duration-300 cursor-pointer hover:scale-110"" alt="Image 1">
             <img src="../images/fearless.jpg" class="w-1/3 md:w-1/4 lg:w-1/6 transition-transform duration-300 cursor-pointer hover:scale-110"" alt="Image 2">
             <img src="../images/speak now.jpg" class="w-1/3 md:w-1/4 lg:w-1/6 transition-transform duration-300 cursor-pointer hover:scale-110"" alt="Image 3">
@@ -45,10 +56,179 @@
         </div>
     </div>
 </header>
-    <!-- Contenedor Global -->
-    <div>
 
+    <!-- hero -->
+  <div style="background-image: url('../images/erasbg.jpg'); background-size: cover; background-position: center; width: 100%;" class="p-4">      <!-- Eras Tour Logo -->
+      <div class="flex flex-col items-center p-20">
+          <img src="../images/eraslogo2.png" class="mx-auto">
+      </div>
+
+      <!-- stream  -->
+      <div id="stream" class="mb-8 p-4">
+        <hr class="border-t-2 border-white mb-4">
+        <h2 class="text-3xl text-center text-white mb-4">STREAM</h2>
+        <hr class="border-t-2 border-white mb-4">
+        <iframe src="https://open.spotify.com/embed/album/1NAmidJlEaVgA3MpcPFYGq?theme=1" 
+                frameborder="0" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                class="w-full rounded-lg shadow-lg Stream_spotifyEmbed__S7ivh"></iframe>
+      </div>
+
+      <!-- shop  -->
+      <section class="mb-8 p-4">
+        <div>
+          <hr class="border-t-2 border-white mb-4">
+          <h2 class="text-3xl text-center text-white mb-4">STORE</h2>          
+          <div class=" text-md text-center text-white mb-4"><a href="https://taylorswift.lnk.to/store" alt="Visit Taylor Swift Official Store" target="_blank" rel="noopener">Shop Official Store</a></div>
+          <hr class="border-t-2 border-white mb-4">
+
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- sueter -->
+            <div class="border border-pink-300 rounded-lg overflow-hidden shadow-sm bg-white">
+              <img src="..//images/XxQ6I6xWKVtkGKTDA01J39NDUebiPb89-4.webp" alt="Product 1" class="w-full h-80 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">Taylor Swift | The Eras Tour Lover Oversized T-Shirt</h3>
+                <p class="text-gray-700 mb-4">This is a description of Product 1. It is a high-quality item that you will love.</p>
+                <button class="w-full bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition">SHOP</button>
+              </div>
+            </div>
+            <!-- sueter -->
+            <div class="border border-pink-300 rounded-lg overflow-hidden shadow-sm bg-white">
+              <img src="..//images/ninejiji.webp" alt="Product 2" class="w-full h-80 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">Welcome To New York, It’s Been Waiting For You V-Neck Pullover</h3>
+                <p class="text-gray-700 mb-4">This is a description of Product 1. It is a high-quality item that you will love.</p>
+                <button class="w-full bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition">SHOP</button>
+              </div>
+            </div>
+            <!-- sueter -->
+            <div class="border border-pink-300 rounded-lg overflow-hidden shadow-sm bg-white">
+              <img src="..//images/cpsito3.webp" alt="Product 3" class="w-full h-80 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">1989 (Taylor's Version) Clean Denim Jacket</h3>
+                <p class="text-gray-700 mb-4">This is a description of Product 1. It is a high-quality item that you will love.</p>
+                <button class="w-full bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition">SHOP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- trailer -->
+    <div id="video" class="mb-8 p-4">
+      <hr class="border-t-2 border-white mb-4">
+      <h2 class="text-3xl text-center text-white mb-4">VIDEO</h2>
+      <hr class="border-t-2 border-white mb-4">
+      <div class=>
+              <video controls poster="..//images/poster.jpg">
+                  <source src="../images/videoplayback (4).mp4" type="video/mp4">
+              </video>
+              <div class="p-4">
+                <h3 class="text-xl font-semibold text-center text-white">TAYLOR SWIFT | THE ERAS TOUR Concert Film Official Trailer</h3>
+                <br>
+                <p class="text-center text-md font-semibold text-gray-800 leading-relaxed p-4 bg-white bg-opacity-75 rounded-lg shadow-md">
+                  The Eras Tour was the sixth worldwide concert tour by American singer-songwriter Taylor Swift. The tour was in support of all of Swift's studio albums, with emphasis on her most recent albums: Lover (2019), Folklore (2020), Evermore (2020), Midnights (2022), and The Tortured Poets Department (2024).
+              </p>
+            </div>
+      </div>
     </div>
-</body>
 
+    <!-- highlights -->
+    <div id="high" class="mb-8 p-4">
+      <hr class="border-t-2 border-white mb-4">
+      <h2 class="text-3xl text-center text-white mb-4">HIGHLIGHTS</h2>
+      <hr class="border-t-2 border-white mb-4">
+      <div class="text-white p-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div>
+            <h2 class="text-2xl font-bold">2024: Billboard Music Awards</h2>
+            <ul class="font-semibold">
+              <li>Top Artist</li>
+              <li>Top Female Artist</li>
+              <li>Top Billboard 200 Artist</li>
+              <li>Top Hot 100 Artist</li>
+              <li>Top Hot 100 Songwriter</li>
+              <li>Top Streaming Songs Artist</li>
+              <li>Top Radio Songs Artist</li>
+              <li>Top Billboard Global 200 Artist</li>
+              <li>Top Billboard Global (Excl. U.S.) Artist</li>
+              <li>Top Billboard 200 Album (“The Tortured Poets Department”)</li>
+            </ul>
+          </div>
+      
+          <div>
+            <h2 class="text-2xl font-bold">2024: MTV VIDEO MUSIC AWARDS</h2>
+            <ul class="font-semibold">
+              <li>Artist of the Year</li>
+              <li>Best Pop</li>
+              <li>Video of the Year "Fortnight (feat. Post Malone)"</li>
+              <li>Best Collaboration "Fortnight (feat. Post Malone)"</li>
+              <li>Best Direction "Fortnight (feat. Post Malone)"</li>
+              <li>Best Editing "Fortnight (feat. Post Malone)"</li>
+              <li>Song of Summer "Fortnight (feat. Post Malone)"</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h2 class="text-2xl font-bold">2024: MTV EUROPE MUSIC AWARDS</h2>
+            <ul class="font-semibold">
+              <li>Best Artist</li>
+              <li>Best Video "Fortnight"</li>
+            </ul>
+          </div>
+      
+          <div>
+            <h2 class="text-2xl font-bold">2024: PEOPLE'S CHOICE AWARDS</h2>
+            <ul class="font-semibold">
+              <li>Female Artist of the Year</li>
+              <li>Pop Artist of the Year</li>
+            </ul>
+          </div>
+      
+          <div>
+            <h2 class="text-2xl font-bold">2024: Billboard Music Awards</h2>
+            <ul class="font-semibold">
+              <li>Top Artist</li>
+              <li>Top Female Artist</li>
+              <li>Top Billboard 200 Artist</li>
+              <li>Top Hot 100 Artist</li>
+              <li>Top Hot 100 Songwriter</li>
+              <li>Top Streaming Songs Artist</li>
+              <li>Top Radio Songs Artist</li>
+              <li>Top Billboard Global 200 Artist</li>
+              <li>Top Billboard Global (Excl. U.S.) Artist</li>
+              <li>Top Billboard 200 Album (“The Tortured Poets Department”)</li>
+            </ul>
+          </div>
+      
+          <div>
+            <h2 class="text-2xl font-bold">2024: MTV VIDEO MUSIC AWARDS</h2>
+            <ul class="font-semibold">
+              <li>Artist of the Year</li>
+              <li>Best Pop</li>
+              <li>Video of the Year "Fortnight (feat. Post Malone)"</li>
+              <li>Best Collaboration "Fortnight (feat. Post Malone)"</li>
+              <li>Best Direction "Fortnight (feat. Post Malone)"</li>
+              <li>Best Editing "Fortnight (feat. Post Malone)"</li>
+              <li>Song of Summer "Fortnight (feat. Post Malone)"</li>
+            </ul>
+          </div>
+      
+          <div>
+            <h2 class="text-2xl font-bold">2023: BEST ACHIEVEMENT IN DÉCOR/DESIGN</h2>
+            <p class="font-semibold">
+              TAYLOR SWIFT: “FORTNIGHT” Set Decoration by Neil Wyzanowski SDSA with Production Design by Ethan Tobman
+            </p>
+          </div>
+
+          
+      
+        </div>
+      </div>      
+    </div>
+
+
+</body>
 </html>
