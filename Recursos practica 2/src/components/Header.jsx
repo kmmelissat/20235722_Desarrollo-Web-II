@@ -1,4 +1,4 @@
-export function Header({cart, total,decreaseQuantity,  increaseQuantity,removeFromCart,emptyCart,}){
+export function Header({cart, total,decreaseQuantity, increaseQuantity,removeFromCart,emptyCart,}){
     return(
         <header className="py-5 header">
         <div className="container-xl">
