@@ -26,7 +26,7 @@ export function useFetchMovies(query) {
                 setError(null); //error null
 
                 const response = await fetch(
-                    `http://www.omdbapi.com/?apikey=${API_KEY}&s=${query}` //fetch de la api
+                    `https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}` //fetch de la api
                 );
 
                 if (!response.ok) {
